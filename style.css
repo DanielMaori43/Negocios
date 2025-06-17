@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0a0a23;
+    font-family: "Inter", sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 1100px;
+    display: flex;
+    background-color: #1c1c3a;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  
+  .ladoroxo {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .escrita h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  
+  .rosa {
+    color: #aa5cdb;
+  }
+  
+  .descricao {
+    color: #c5c5c5;
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+  
+  .partedebaixo {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    
+  }
+  
+  .partedebaixo li {
+    text-align: left;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  
+  .partedebaixo li p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .partedebaixo li span {
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: 2px;
+  }
+  
+  /* Imagem com overlay */
+  .imagem-com-overlay {
+    flex: 1;
+    position: relative;
+  }
+  
+  .imagem-com-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .imagem-com-overlay .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 92, 219, 0.5);
+  }
+  
+  
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+  
+    .ladoroxo {
+      padding: 30px;
+    }
+  
+    .escrita h1 {
+      font-size: 28px;
+    }
+  
+    .partedebaixo {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .partedebaixo {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .partedebaixo li {
+      text-align: center;
+    }
+  }
+  
